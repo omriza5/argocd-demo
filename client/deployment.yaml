@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: omriza5/cr-client:latest
+          image: omriza5/cr-client:97384fc547a7806fc1347792e8299548a77a08fa
           ports:
             - containerPort: 80
