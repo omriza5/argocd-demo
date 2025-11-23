@@ -1,19 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: myapp-server
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: myapp-server
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: myapp-server
     spec:
       containers:
-        - name: myapp
+        - name: server
           image: omriza5/cr-server:7d25c109f9006950aa7bdd7758c5598d6fd09c2c
           ports:
-            - containerPort: 8000
+            - containerPort: 8080
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"

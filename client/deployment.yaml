@@ -17,3 +17,10 @@ spec:
           image: omriza5/cr-client:97384fc547a7806fc1347792e8299548a77a08fa
           ports:
             - containerPort: 80
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
