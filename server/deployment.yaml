@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: omriza5/cr-server:latest
+          image: omriza5/cr-server:7d25c109f9006950aa7bdd7758c5598d6fd09c2c
           ports:
             - containerPort: 8000
