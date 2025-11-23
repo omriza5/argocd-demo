@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: myapp-client
   namespace: argocd
 spec:
   project: default
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/omriza5/argocd-demo.git
     targetRevision: HEAD
-    path: dev
+    path: client
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-client
+spec:
+  selector:
+    matchLabels:
+      app: myapp-client
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: myapp-client
+    spec:
+      containers:
+        - name: client
+          image: omriza5/cr-client:latest
+          ports:
+            - containerPort: 80
