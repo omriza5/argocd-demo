@@ -16,7 +16,7 @@ spec:
         - name: server
           image: omriza5/cr-server:3fb13ae963bdbdeae7e935ecfa94a22211a54acd
           ports:
-            - containerPort: 8080
+            - containerPort: 8000
           resources:
             limits:
               memory: "512Mi"
