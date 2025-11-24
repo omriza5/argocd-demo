@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: omriza5/cr-server:3fb13ae963bdbdeae7e935ecfa94a22211a54acd
+          image: omriza5/cr-server:3d6b593573c29c4a55860f1049e665a860c50c9b
           ports:
             - containerPort: 8000
           resources:
